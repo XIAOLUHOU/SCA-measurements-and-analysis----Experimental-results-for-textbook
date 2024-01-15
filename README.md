@@ -27,3 +27,7 @@ The other two datasets are mostly used for DPA attacks on RSA
 - _DPA_Mon_ contains 10,000 measurements of unprotected RSA computations implemented using the square and multiply algorithm and Mongomery's method was used for implementing modular multiplication. Each trace corresponds to one random input. The input values are recorded in the file _inputs.txt_.
 - _DPA_Counter_ contains 10,000 measurements of RSA computation with Mongomery's method for implementing modular multiplication, protected by square and multiply always algorithm. Each trace corresponds to a random input. The input values are recorded in the file _inputs.txt_.
 
+## Encoding-based countermeasure against SCA attacks
+Section 4.5.1.1 analyzes encoding-based countermeasures against SCA attacks on PRESENT implementations. The analysis is mostly on one instrucion - MOV.
+- _MOV_SNR_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 15.
+
