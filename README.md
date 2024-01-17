@@ -9,11 +9,19 @@ The detailed analysis can be found in jupyter notebook files. As the name sugges
 ## SNR, TVLA and DPA
 Section 4.2 focuses on SNR computations and TVLA. Section 4.3 illustrates differential power analysis.
 Four datasets are used for those two sections.
-Each of the datasets contains the power consumption measurements for one round of PRESENT encryption, surrounded by NOP operations
-- _fixed_dataset_1_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _ABCDEF1234567890_. 
-- _fixed_datset_2_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _84216BA484216BA4_.
-- _random_dataset_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a random plaintext for each trace. The plaintext values are recorded in the file _plaintexts.txt_. In particular, the plaintext corresponding to _trace_0.text_ is _eee53883c44a3899_, where the 0th nibble is _9_.
-- _random_pt_dataset_ contains 10000 traces with a random round key and a random plaintext for each trace. The plaintext and round key values are recorded in the files _plaintexts.txt_ and _keys.text_ respectively.
+Each of the datasets contains the power consumption measurements for one round of PRESENT encryption, surrounded by NOP operations.
+- _fixed_dataset_1_ contains 5,000 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _ABCDEF1234567890_. 
+- _fixed_datset_2_ contains 5,000 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _84216BA484216BA4_.
+- _random_pt_dataset_ contains 5,000 traces with a fixed round key _FEDCBA0123456789_ and a random plaintext for each trace. The plaintext values are recorded in the file _plaintexts.txt_. In particular, the plaintext corresponding to _trace_0.text_ is _eee53883c44a3899_, where the 0th nibble is _9_.
+- _random_dataset_ contains 10,000 traces with a random round key and a random plaintext for each trace. The plaintext and round key values are recorded in the files _plaintexts.txt_ and _keys.txt_ respectively.
+
+## SCA on masked PRESENT implementation
+Section 4.5.2.3 presents Boolean masking for PRESENT as well as attacks on the implementation. Four datasets are used for the analysis. They are similar to the datasets for unprotected PRESENT implementations.
+Each of the datasets contains the power consumption measurements for one round of masked PRESENT encryption, surrounded by NOP operations
+- _masked_fixed_dataset_A_ contains 100 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _ABCDEF1234567890_.
+- _masked_fixed_dataset_B_ contains 100 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _84216BA484216BA4_.
+- _masked_random_plaintext_dataset_ contains 20,000 traces with a fixed round key _FEDCBA0123456789_ and a random plaintext for each trace. The plaintext values are recorded in the file _plaintext.txt_
+- _masked_random_dataset_ contains 10,000 traces with a random round key and a random plaintext for each trace. The plaintext and round key values are recorded in the files _plaintext.txt_ and _keys.txt_ respectively.
 
 ## SCA on RSA
 Section 4.4.2 presents DPA attacks on RSA implementations.
@@ -32,7 +40,7 @@ The other two datasets are mostly used for DPA attacks on RSA
 Section 4.5.1.1 analyzes encoding-based countermeasures against SCA attacks on PRESENT implementations. The analysis is mostly on one instrucion - MOV.
 - _MOV_SNR_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 15. The input values are recorded in the file _bytes.txt_. This dataset is mainly used for finding the POI for protection.
 - _MOV_attack_traces_original_input_ contains 100,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 15. The input values are recorded in the file _bytes.txt_. This dataset is used for performing attacks on unprotected implementation.
-- _MOV_profile_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 255. The input values are recorded in the file _bytes_long_bit.txt_. This dataset is used for profiling the leakage at the POI.
+- _MOV_profile_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 255. The input values are recorded in the file _bytes_long_bit.txt_. This dataset is used for profiling the leakage at the POI in order to find the optimal code.
 - _MOV_protected_traces_ contains six folders, each corresponding to protected implementation with one particular code. This dataset is used for profiling the leakages in order to perform attacks on protected implementations. In every folder,
   - there are 10,000 traces for the computation of the MOV instruction with encoded inputs;
   - each trace in the folder corresponds to one random encoded input
@@ -41,4 +49,3 @@ Section 4.5.1.1 analyzes encoding-based countermeasures against SCA attacks on P
   - there are 100,000 traces for the computation of the MOV instruction with encoded inputs;
   - each trace in the folder corresponds to one random encoded input
   - the input values are recorded in the file _bytes.txt_
-- 
