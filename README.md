@@ -43,9 +43,9 @@ Section 4.5.1.1 analyzes encoding-based countermeasures against SCA attacks on P
 - _MOV_profile_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 255. The input values are recorded in the file _bytes_long_bit.txt_. This dataset is used for profiling the leakage at the POI in order to find the optimal code.
 - _MOV_protected_traces_ contains six folders, each corresponding to protected implementation with one particular code. This dataset is used for profiling the leakages in order to perform attacks on protected implementations. In every folder,
   - there are 10,000 traces for the computation of the MOV instruction with encoded inputs;
-  - each trace in the folder corresponds to one random encoded input
-  - the input values are recorded in the file _bytes_encoded.txt_
+  - each trace in the folder corresponds to one random encoded input;
+  - the input values are recorded in the file _bytes_encoded.txt_.
 - _MOV_attack_traces_encoded_ contains six folders, each corresponding to protected implementation with one particular code. This dataset is used for performing attacks on protected implementations. In every folder,
   - there are 100,000 traces for the computation of the MOV instruction with encoded inputs;
-  - each trace in the folder corresponds to one random encoded input
-  - the input values are recorded in the file _bytes.txt_
+  - each trace in the folder corresponds to one random encoded input;
+  - the input values are recorded in the file _bytes.txt_.
