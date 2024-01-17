@@ -12,7 +12,7 @@ Four datasets are used for those two sections.
 Each of the datasets contains the power consumption measurements for one round of PRESENT encryption, surrounded by NOP operations
 - _fixed_dataset_1_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _ABCDEF1234567890_. 
 - _fixed_datset_2_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _84216BA484216BA4_.
-- _random_dataset_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a random plaintext for each trace. The plaintext values are recorded in the file _plaintexts.txt_. In particular, the plaintext corresponding to _trace_0.text_ is _eee53883c44a3899_. The 0th nibble is _9_.
+- _random_dataset_ contains 5000 traces with a fixed round key _FEDCBA0123456789_ and a random plaintext for each trace. The plaintext values are recorded in the file _plaintexts.txt_. In particular, the plaintext corresponding to _trace_0.text_ is _eee53883c44a3899_, where the 0th nibble is _9_.
 - _random_pt_dataset_ contains 10000 traces with a random round key and a random plaintext for each trace. The plaintext and round key values are recorded in the files _plaintexts.txt_ and _keys.text_ respectively.
 
 ## SCA on RSA
