@@ -17,7 +17,7 @@ Each of the datasets contains the power consumption measurements for one round o
 
 ## SCA on masked PRESENT implementation
 Section 4.5.2.3 presents Boolean masking for PRESENT as well as attacks on the implementation. Four datasets are used for the analysis. They are similar to the datasets for unprotected PRESENT implementations.
-Each of the datasets contains the power consumption measurements for one round of masked PRESENT encryption, surrounded by NOP operations
+Each of the datasets contains the power consumption measurements for one round of masked PRESENT encryption, surrounded by NOP operations.
 - _masked_fixed_dataset_A_ contains 100 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _ABCDEF1234567890_.
 - _masked_fixed_dataset_B_ contains 100 traces with a fixed round key _FEDCBA0123456789_ and a fixed plaintext _84216BA484216BA4_.
 - _masked_random_plaintext_dataset_ contains 20,000 traces with a fixed round key _FEDCBA0123456789_ and a random plaintext for each trace. The plaintext values are recorded in the file _plaintext.txt_
