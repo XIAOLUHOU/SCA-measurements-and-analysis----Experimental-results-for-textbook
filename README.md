@@ -30,5 +30,15 @@ The other two datasets are mostly used for DPA attacks on RSA
 
 ## Encoding-based countermeasure against SCA attacks
 Section 4.5.1.1 analyzes encoding-based countermeasures against SCA attacks on PRESENT implementations. The analysis is mostly on one instrucion - MOV.
-- _MOV_SNR_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 15.
-
+- _MOV_SNR_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 15. The input values are recorded in the file _bytes.txt_. This dataset is mainly used for finding the POI for protection.
+- _MOV_attack_traces_original_input_ contains 100,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 15. The input values are recorded in the file _bytes.txt_. This dataset is used for performing attacks on unprotected implementation.
+- _MOV_profile_traces_ contains 10,000 traces for the computation of the MOV instruction. Each trace corresponds to one random input between 0 and 255. The input values are recorded in the file _bytes_long_bit.txt_. This dataset is used for profiling the leakage at the POI.
+- _MOV_protected_traces_ contains six folders, each corresponding to protected implementation with one particular code. This dataset is used for profiling the leakages in order to perform attacks on protected implementations. In every folder,
+  - there are 10,000 traces for the computation of the MOV instruction with encoded inputs;
+  - each trace in the folder corresponds to one random encoded input
+  - the input values are recorded in the file _bytes_encoded.txt_
+- _MOV_attack_traces_encoded_ contains six folders, each corresponding to protected implementation with one particular code. This dataset is used for performing attacks on protected implementations. In every folder,
+  - there are 100,000 traces for the computation of the MOV instruction with encoded inputs;
+  - each trace in the folder corresponds to one random encoded input
+  - the input values are recorded in the file _bytes.txt_
+- 
