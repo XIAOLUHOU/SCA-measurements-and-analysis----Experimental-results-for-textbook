@@ -1,5 +1,5 @@
 # SCA Measurements and Analysis
-This repository contains the measurements and evaluations for Chapter 4 of the following book
+This repository contains the measurements and evaluations for Chapter 4 of the book titled _Cryptography and Embedded Systems Security_, by Xiaolu Hou and Jakub Breier, published by Springer (to appear).
 
 
 For any usage, please cite
@@ -11,8 +11,6 @@ For any usage, please cite
   publisher={Springer}
 }
 ```
-
-Cryptography and Embedded Systems Security, Xiaolu Hou and Jakub Breier, Springer, to appear.
 
 The source codes can be found in jupyter notebook files. As the name suggests, different files contain the analysis for different sections.
 
