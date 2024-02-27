@@ -4,7 +4,7 @@ This repository contains the measurements and evaluations for Chapter 4 of the f
 
 For any usage, please cite
 
-The detailed analysis can be found in jupyter notebook files. As the name suggests, different files contain the analysis for different sections.
+The source codes can be found in jupyter notebook files. As the name suggests, different files contain the analysis for different sections.
 
 ## SNR, TVLA and DPA
 Section 4.2 focuses on SNR computations and TVLA. Section 4.3 illustrates differential power analysis.
