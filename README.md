@@ -3,6 +3,14 @@ This repository contains the measurements and evaluations for Chapter 4 of the f
 
 
 For any usage, please cite
+```
+@book{SCAbook2024,
+  title={Cryptography and Embedded Systems Security},
+  author={Hou, Xiaolu and Breier, Jakub},
+  year={2024},
+  publisher={Springer}
+}
+```
 
 Cryptography and Embedded Systems Security, Xiaolu Hou and Jakub Breier, Springer, to appear.
 
