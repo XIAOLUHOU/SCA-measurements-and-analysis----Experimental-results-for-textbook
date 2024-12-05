@@ -1,7 +1,7 @@
 # SCA Measurements and Analysis
-This repository contains the measurements and evaluations for Chapter 4 of the following book
+This repository contains the measurements and evaluations for Chapter 4 of the following book.
 
-_Cryptography and Embedded Systems Security, Xiaolu Hou and Jakub Breier, Springer, to appear._
+_Cryptography and Embedded Systems Security, Xiaolu Hou, Jakub Breier, ISBN: 978-3-031-62205-2, Springer Nature, 2024._
 
 For any usage, please cite
 ```
@@ -9,11 +9,13 @@ For any usage, please cite
   title={Cryptography and Embedded Systems Security},
   author={Hou, Xiaolu and Breier, Jakub},
   year={2024},
-  publisher={Springer}
+  publisher={Springer Nature}
 }
 ```
+The author's copy of the book can be found at the following link:
+_https://xiaoluhou.github.io/Textbook.pdf_
 
-The source codes can be found in jupyter notebook files. As the name suggests, different files contain the analysis for different sections.
+The source codes are in Jupyter notebook files. As the name suggests, different files contain the analysis for different sections.
 
 ## SNR, TVLA and DPA
 Section 4.2 focuses on SNR computations and TVLA. Section 4.3 illustrates differential power analysis.
