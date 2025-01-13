@@ -2,11 +2,6 @@
 
 This repository contains the measurements and evaluations presented in Chapter 4 of the following book:
 
-**_Cryptography and Embedded Systems Security_**  
-*Authors*: Xiaolu Hou, Jakub Breier  
-*ISBN*: 978-3-031-62205-2  
-*Publisher*: Springer Nature, 2024  
-
 _Cryptography and Embedded Systems Security, Xiaolu Hou, Jakub Breier, ISBN: 978-3-031-62205-2, Springer Nature, 2024._
 
 For any usage of this repository, please cite the book using the following BibTeX entry:
