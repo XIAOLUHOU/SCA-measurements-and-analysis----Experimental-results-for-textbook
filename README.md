@@ -1,9 +1,15 @@
 # SCA Measurements and Analysis
-This repository contains the measurements and evaluations for Chapter 4 of the following book.
+
+This repository contains the measurements and evaluations presented in Chapter 4 of the following book:
+
+**_Cryptography and Embedded Systems Security_**  
+*Authors*: Xiaolu Hou, Jakub Breier  
+*ISBN*: 978-3-031-62205-2  
+*Publisher*: Springer Nature, 2024  
 
 _Cryptography and Embedded Systems Security, Xiaolu Hou, Jakub Breier, ISBN: 978-3-031-62205-2, Springer Nature, 2024._
 
-For any usage, please cite
+For any usage of this repository, please cite the book using the following BibTeX entry:
 ```
 @book{SCAbook2024,
   title={Cryptography and Embedded Systems Security},
@@ -12,10 +18,19 @@ For any usage, please cite
   publisher={Springer Nature}
 }
 ```
-The author's copy of the book can be found at the following link:
-_https://xiaoluhou.github.io/Textbook.pdf_
+## Author's Copy of the Book
 
-The source codes are in Jupyter notebook files. As the name suggests, different files contain the analysis for different sections.
+An author-provided version of the book is available for reference at the following link:  
+[Author's Copy of the Textbook](https://xiaoluhou.github.io/Textbook.pdf)
+
+## Related Course
+
+For further learning, a relevant course titled **"Cryptography and Embedded Systems Security"** is available through EC-Council. You can access it here:  
+[EC-Council Course: Cryptography and Embedded Systems Security](https://codered.eccouncil.org/course/cryptography-and-embedded-systems-security?logged=true)
+
+## Analysis Code
+
+This repository contains source codes for analysis, provided as Jupyter Notebook files. Each notebook corresponds to specific sections of the content, as indicated by its filename.
 
 ## SNR, TVLA and DPA
 Section 4.2 focuses on SNR computations and TVLA. Section 4.3 illustrates differential power analysis.
